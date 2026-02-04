@@ -15,7 +15,7 @@ print(f'{num:x}')
 # Перевод в системы 2 <= sys <= 9
 def convert(sys, num):
     num_sys = ''
-    while num > 0:
+    while num:
         num_sys += str(num % sys)
         num //= sys
     return num_sys[::-1]
@@ -27,7 +27,7 @@ from string import printable
 
 def convert(sys, num):
     num_sys = ''
-    while num > 0:
+    while num:
         num_sys += printable[num % sys]
         num //= sys
     return num_sys[::-1]
