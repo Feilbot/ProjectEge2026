@@ -1,5 +1,3 @@
-a = '1234567898543345'
+a = [[12, 34], [13, 60]]
 
-for i in range(0, len(a)):
-    a = a[:(-1*i)]
-    print(a)
+print(sorted(a, key = lambda x:(x[0], -x[1])))
