@@ -1,3 +1,5 @@
-a = {'1': 2, '2': 3}
+a = '1234567898543345'
 
-print(max(a))
+for i in range(0, len(a)):
+    a = a[:(-1*i)]
+    print(a)
