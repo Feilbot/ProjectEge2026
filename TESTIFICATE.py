@@ -1,3 +1,7 @@
-a = [[12, 34], [13, 60]]
-
-print(sorted(a, key = lambda x:(x[0], -x[1])))
+x = '55'
+a = f'1{x}q2'
+for i in a:
+    print(i)
+from string import printable
+print(printable.index('!'))
+print(printable[36])
