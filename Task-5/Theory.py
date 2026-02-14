@@ -21,28 +21,28 @@ print(f'{num:x}')
 separator(2) #----------------------------------------------------------------
 
 # Перевод в системы 2 <= sys <= 9
-def convert(sys, num):
+def convert(num, sys):
     num_sys = ''
     while num:
         num_sys += str(num % sys)
         num //= sys
     return num_sys[::-1]
 
-print(convert(4, 22))
+print(convert(22, 4))
 
 separator(3) #----------------------------------------------------------------
 
 # Перевод в любую систему исчисления
 from string import printable
 
-def convert(sys, num):
+def convert(num, sys):
     num_sys = ''
     while num:
         num_sys += printable[num % sys]
         num //= sys
     return num_sys[::-1]
 
-print(convert(14, 2322))
+print(convert(2322, 14))
 
 separator(4) #----------------------------------------------------------------
 
