@@ -5,6 +5,7 @@ def convert_2(num, sys):
     return num_sys
 
 for x in range(42):
+    print(x)
     num_1 = convert_2(list('J569') + [str(x)], 42)
     num_2 = convert_2(list('1') + [str(x)] + list('IA'), 42)
     num = num_1 + num_2

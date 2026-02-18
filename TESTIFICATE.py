@@ -5,3 +5,5 @@ for i in a:
 from string import printable
 print(printable.index('!'))
 print(printable[36])
+print([str(x)])
+print(int(str(x), 36))
