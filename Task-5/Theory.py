@@ -26,7 +26,7 @@ def convert(num, sys):
     while num:
         num_sys += str(num % sys)
         num //= sys
-    return num_sys[::-1]
+    return num_sys[::-1] if num_sys else '0'
 
 print(convert(22, 4))
 
