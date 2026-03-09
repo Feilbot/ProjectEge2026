@@ -1,4 +1,4 @@
-with open(r'..\..\Files\24_26077.txt') as file:
+with open(r'../../../Files/24_26077.txt') as file:
     data = file.readline()
 
 for i in '13579':

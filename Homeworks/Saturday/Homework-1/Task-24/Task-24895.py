@@ -1,4 +1,4 @@
-with open(r'..\..\..\Files\24_24895.txt') as file:
+with open(r'../../../../Files/24_24895.txt') as file:
     data = file.readline()
 
 data = data.replace('+', '*')

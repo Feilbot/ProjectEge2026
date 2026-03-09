@@ -1,4 +1,4 @@
-with open(r'..\..\Files\24_26078.txt') as file:
+with open(r'../../../Files/24_26078.txt') as file:
     data = file.readline()
 
 data = data.split('W')

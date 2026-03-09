@@ -1,4 +1,4 @@
-with open(r'..\..\..\Files\24_25361.txt') as file:
+with open(r'../../../../Files/24_25361.txt') as file:
     data = file.readline()
 
 ans = 0
