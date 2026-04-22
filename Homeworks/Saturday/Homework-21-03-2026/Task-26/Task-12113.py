@@ -2,10 +2,10 @@ with open(r'..\..\..\..\Files\26_12113.txt') as file:
     N = file.readline()
     boxes = sorted(set([int(i) for i in file]))[::-1]
 
-previous_box_chet = boxes[boxes.index([i for i in boxes if i % 2 == 0][0])]
+previous_box_chet = max(i for i in boxes if i % 2 == 0)
 ans_chet = 1
 
-previous_box_nechet = boxes[boxes.index([i for i in boxes if i % 2 == 1][0])]
+previous_box_nechet = max(i for i in boxes if i % 2 == 1)
 ans_nechet = 1
 
 for box in boxes:

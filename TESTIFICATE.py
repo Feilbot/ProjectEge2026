@@ -25,9 +25,30 @@ def convert(num, sys):
 a = 0
 print(convert(a, 4))'''
 
-from string import printable
+'''from string import printable
 a = printable[:16]
 print(a[::2])
 print(a[1::2])
 print(a)
-print(len(set(a)), len(a))
+print(len(set(a)), len(a))'''
+
+'''a = '123'
+print(a[1:-1])'''
+
+'''a = [1, 2, 3]
+print("".join(a))'''
+
+# '''with open(r'C:\Users\XYZET\Downloads\9.txt') as file:
+#     data = [list(map(int, i.split())) for i in file]
+#
+# print(data)
+# '''
+
+# a = '1234'
+# print(a[1:])
+
+l = 0
+r = 1
+a = '12zzz2343'
+sum_str = sum(int(i) for i in a[l:r] if int(i, 36) <= 9)
+print(sum_str)

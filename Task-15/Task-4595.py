@@ -1,0 +1,10 @@
+def DEL(n, m):
+    return n % m == 0
+
+def f(x):
+    return (DEL(x, 2) <= (not DEL(x, 3))) or (x + A >= 80)
+
+for A in range(1, 1_000):
+    if all(f(x) for x in range(1, 1_000)):
+        print(A)
+        break
