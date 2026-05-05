@@ -47,8 +47,12 @@ print("".join(a))'''
 # a = '1234'
 # print(a[1:])
 
-l = 0
+'''l = 0
 r = 1
 a = '12zzz2343'
 sum_str = sum(int(i) for i in a[l:r] if int(i, 36) <= 9)
-print(sum_str)
+print(sum_str)'''
+
+a = '**100011*'
+a = a[a.count('*') - 1:-1]
+print(a)
