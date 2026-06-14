@@ -53,6 +53,8 @@ a = '12zzz2343'
 sum_str = sum(int(i) for i in a[l:r] if int(i, 36) <= 9)
 print(sum_str)'''
 
-a = '**100011*'
+'''a = '**100011*'
 a = a[a.count('*') - 1:-1]
-print(a)
+print(a)'''
+
+'''print(*range(1, 10, 2))'''
